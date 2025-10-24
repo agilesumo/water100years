@@ -16,7 +16,7 @@ const IMAGE_SIZE = 100;
 
 // Load the image.
 function preload() {
-  imgGlobe = loadImage("/assets/globe-public.png");
+  imgGlobe = loadImage("assets/globe-public.png");
 }
 
 function setup() {
