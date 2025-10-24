@@ -7,6 +7,30 @@
     <meta charset="utf-8"
     <meta name="viewport" content="width=device-width, initial-scale=1.0">/>
 
+          <script>
+        if (!window.process) {
+          window.process = {};
+        }
+        if (!window.process.env) {
+          window.process.env = {};
+        }
+        window.process.env.API_URL = '/editor';
+        window.process.env.NODE_ENV = 'production';
+        window.process.env.S3_BUCKET = 'assets.editor.p5js.org';
+        window.process.env.S3_BUCKET_URL_BASE = 'https://assets.editor.p5js.org/';
+        window.process.env.AWS_REGION = 'us-west-2';
+        window.process.env.FORCE_TO_HTTPS = false;
+        window.process.env.CLIENT = true;
+        window.process.env.LOGIN_ENABLED = true;
+        window.process.env.EXAMPLES_ENABLED = true;
+        window.process.env.UI_ACCESS_TOKEN_ENABLED = false;
+        window.process.env.UI_COLLECTIONS_ENABLED = true;
+        window.process.env.UPLOAD_LIMIT = 250000000;
+        window.process.env.TRANSLATIONS_ENABLED = true; 
+        window.process.env.PREVIEW_URL = 'https://preview.p5js.org';
+        window.process.env.GA_MEASUREMENT_ID='UA-53383000-1';
+      </script>
+
   </head>
   <body>
     <main>
